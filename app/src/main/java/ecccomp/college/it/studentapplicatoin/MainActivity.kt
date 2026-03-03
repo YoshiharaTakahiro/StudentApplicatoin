@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     // リストビューに表示するデータ
     // タイトル・説明文・遷移先Activityを1セットにしたリスト
     val menuItems = listOf(
-        mapOf(TITLE to "画面操作", CONTENT to "画面デザイン、イベント、画面遷移などのハンズオン", ACTIVITY_CLASS to null), // LayoutActivity::classに後ほど変更します
+        mapOf(TITLE to "画面操作", CONTENT to "画面デザイン、イベント、画面遷移などのハンズオン", ACTIVITY_CLASS to LayoutActivity::class.java),
         mapOf(TITLE to "一覧表示", CONTENT to "リストビュー操作のハンズオン", ACTIVITY_CLASS to ListActivity::class.java),
         mapOf(TITLE to "ブラウザとマップ", CONTENT to "暗黙的インテントについてのハンズオン", ACTIVITY_CLASS to ImplicitIntentActivity::class.java),
         mapOf(TITLE to "カメラ", CONTENT to "既存カメラアプリを利用するためのハンズオン", ACTIVITY_CLASS to CameraActivity::class.java),
